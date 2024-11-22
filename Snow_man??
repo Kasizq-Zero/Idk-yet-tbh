@@ -1,0 +1,71 @@
+//variable
+var Color = rgb(randomNumber(255), randomNumber(255), randomNumber(255));
+
+//This is for the background 
+background("white");
+
+//This is for the globe
+strokeWeight(10);
+fill("lightblue");
+ellipse(200, 200, 400, 400);
+
+//This is for the body
+strokeWeight(5);
+fill("white");
+ellipse(200, 140, 133.3, 133.3);
+ellipse(200, 280, 200, 200);
+
+//This is for the random snow
+noStroke();
+fill("white");
+ellipse(randomNumber(1,400),  randomNumber(1,400), 25, 25);
+ellipse(randomNumber(1,400),  randomNumber(1,400), 25, 25);
+ellipse(randomNumber(1,400),  randomNumber(1,400), 25, 25);
+ellipse(randomNumber(1,400),  randomNumber(1,400), 25, 25);
+ellipse(randomNumber(1,400),  randomNumber(1,400), 25, 25);
+ellipse(randomNumber(1,400),  randomNumber(1,400), 25, 25);
+ellipse(randomNumber(1,400),  randomNumber(1,400), 25, 25);
+ellipse(randomNumber(1,400),  randomNumber(1,400), 25, 25);
+ellipse(randomNumber(1,400),  randomNumber(1,400), 25, 25);
+
+//this is for the nose
+stroke("black");
+strokeWeight(3);
+fill("orange");
+regularPolygon(200, 155, 3, 20);
+
+//This is for the eyes
+fill("black");
+ellipse(180, 130, 10, 10);
+ellipse(220, 130, 10, 10);
+
+//This is the arms
+stroke("brown");
+strokeWeight(8);
+line(300, 250, 370, 170);
+line(100, 250, 30, 170);
+
+//This is the scarf
+stroke(Color);
+strokeWeight(40);
+line(120, 200, 280, 200);
+
+//this is for the ball on top of the hat
+strokeWeight(3);
+stroke("black");
+fill("white");
+ellipse(200, 45, 25, 25);
+
+//This is for the hat
+stroke(Color);
+strokeWeight(20);
+noFill();
+arc(200, 120, 120, 110, 180, 180);
+
+//These is for the buttons
+fill("black");
+strokeWeight(3);
+stroke("black");
+ellipse(200, 250, 10, 10);
+ellipse(200, 300, 10, 10);
+ellipse(200, 350, 10, 10);
